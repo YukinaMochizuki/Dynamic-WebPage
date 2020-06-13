@@ -17,11 +17,13 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework.routers import DefaultRouter
 
-from articles import views
+from articles import views as articlesView
+from account import views as accountView
 
 router = DefaultRouter()
-router.register(r'articles', views.ArticleViewSet)
-router.register(r'kanban', views.KanbanViewSet)
+router.register(r'articles', articlesView.ArticleViewSet)
+router.register(r'kanban', articlesView.KanbanViewSet)
+router.register(r'account', accountView.AccountViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
