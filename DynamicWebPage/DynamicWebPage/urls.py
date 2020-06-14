@@ -17,11 +17,13 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework.routers import DefaultRouter
 
+from information import views as informationView
 from articles import views as articlesView
 from account import views as accountView
 from event import views as eventView
 
 router = DefaultRouter()
+router.register(r'information', informationView.InformationViewSet)
 router.register(r'articles', articlesView.ArticleViewSet)
 router.register(r'kanban', articlesView.KanbanViewSet)
 router.register(r'account', accountView.AccountViewSet)
