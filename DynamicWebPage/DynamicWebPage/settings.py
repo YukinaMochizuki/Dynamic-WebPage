@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'information',
     'articles',
     'account',
-    'event'
+    'event',
+    'serviceRequest'
 ]
 
 MIDDLEWARE = [
