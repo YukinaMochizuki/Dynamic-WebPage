@@ -39,5 +39,7 @@ urlpatterns = [
     url(r'^api/v1/', include(router.urls)),
     url('^api/v1/event/(?P<accountname>.+)/(?P<eventType>.+)/$', eventView.EventList.as_view()),
 
-    path('api/v1/borrowFacility/', serviceRequestView.BorrowFacilityRequest)
+    path('api/v1/borrowFacility/', serviceRequestView.BorrowFacilityRequest),
+    path('api/v1/EntrustLaundryToWash/', serviceRequestView.EntrustLaundryToWashRequest),
+    path('api/v1/ParkingSpaceApplication/', serviceRequestView.ParkingSpaceApplicationRequest)
 ]
