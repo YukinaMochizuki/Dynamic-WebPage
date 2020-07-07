@@ -5,7 +5,7 @@
 - OpenAPI Specification: [SwaggerHub](https://app.swaggerhub.com/apis/YukinaMochizuki/Dynamic_Web_Project/1.1.0#/)
 
 ## Network architecture
-![](https://i.imgur.com/RPlUsjC.png)
+![](https://i.imgur.com/D6sPozZ.png)
 ![](https://i.imgur.com/Jbsddem.png)
 ![](https://i.imgur.com/Ll9EDuu.png)
 
